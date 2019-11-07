@@ -99,25 +99,7 @@ UUDate::UUDate(int day, int month, int year) {
 
 bool UUDate::validateDay(int day) {
 
-//	int monthDays[13] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-//
-//	for (int i = 1; i < monthDays[12]; i++) {
-//
-//
-//		if ((validateLeapYear(year_) == true && monthDays[2]) && (day > 0 && day <= 29)) {
-//			return true;
-//		}
-//		else if ((validateLeapYear(year_) != true && monthDays[2]) && (day > 0 && day <= 28)) {
-//			return true;
-//		}
-//		else if (monthDays[i] == 31 && day > 0 && day < 31) {
-//			return true;
-//		}
-//		else if (monthDays[i] == 30 && day > 0 && day < 31) {
-//			return true;
-//		}
-//	}
-//}
+
 	
 	if ((validateLeapYear(year_) == true && month_ == 2) && (day > 0 && day <= 29)) {
 		return true;
@@ -184,57 +166,7 @@ void UUDate::IncrementDate() {
 
 	//TODO - Add your implementation here
 
-//	int monthDays[13] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-//	
-//	if (validateLeapYear(year_) == true && monthDays[2]) {
-//		if (day_ > 0 && day_ < 29) {
-//			day_++;
-//		}
-//		else if (day_ == 29) {
-//			month_++;
-//			day_ = 1;
-//		}
-//	}
-//	else if (monthDays[2]) {
-//		if (day_ > 0 && day_ < 28) {
-//			day_++;
-//		}
-//		else if (day_ == 28) {
-//			month_++;
-//			day_ = 1;
-//		}
-//	}
-//	else if (monthDays[12]) {
-//		if (day_ > 0 && day_ < 31) {
-//			day_++;
-//		}
-//		else if (day_ == 31) {
-//			year_++;
-//			month_ = monthDays[1];
-//			day_ = 1;
-//		}
-//	} else for (int i = 1; i < monthDays[12]; i++) {
-//
-//		if (monthDays[i] == 31) {
-//			if (day_ > 0 && day_ < 31) {
-//				day_++;
-//			}
-//			else if (day_ == 31) {
-//				month_++;
-//				day_ = 1;
-//			}
-//		}
-//		else if (monthDays[i] == 30) {
-//			if (day_ > 0 && day_ < 30) {
-//				day_++;
-//			}
-//			else if (day_ == 30) {
-//				month_++;
-//				day_ = 1;
-//			}
-//		}
-//	} 	
-//}
+
 
 
 	if (month_ == 2 && validateLeapYear(year_) == true) {
